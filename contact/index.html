@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - MysticalZone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="/styles.css">
+    <link rel="stylesheet" href="/contact/contact.css?v1.0">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1 class="logo-text">
+                        MYSTICALZONE
+                    </h1>
+                    <p class="tagline">Enter the Zone – Discover the Unknown</p>
+                </div>
+
+                <!-- Navigation - Desktop -->
+                <nav class="nav-desktop">
+                    <ul class="nav-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/store">Store</a></li>
+                        <li><a href="/radio">Radio</a></li>
+                        <li><a href="/app">Apps</a></li>
+                    </ul>
+                </nav>
+
+                <!-- CTA Buttons - Desktop -->
+                <div class="cta-buttons-desktop">
+                    <button class="btn btn-secondary" onclick="window.location.href='https://ourchatclub.online/'">
+                        <i class="fas fa-comments" ></i> Join Chat
+                    </button>
+                    <button class="btn btn-primary" onclick="window.location.href='https://me.mysticalzone.xyz/'">
+                        <i class="fas fa-briefcase"></i> Portfolio
+                    </button>
+                </div>
+
+                <!-- Hamburger Menu - Mobile/Tablet -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile/Tablet Menu Panel -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <button class="close-menu" id="closeMenu" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="mobile-nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/store">Store</a></li>
+                <li><a href="/radio">Radio</a></li>
+                <li><a href="/app">Apps</a></li>
+            </ul>
+            <!-- Mobile CTA Buttons -->
+            <ul class="mobile-cta-buttons">
+                <li><button class="btn btn-secondary btn-mobile-full" onclick="window.location.href='https://ourchatclub.online/'">
+                    <i class="fas fa-comments"></i> Join Chat
+                </button></li>
+                <li><button class="btn btn-primary btn-mobile-full" onclick="window.location.href='https://me.mysticalzone.xyz/'">
+                    <i class="fas fa-briefcase"></i> Portfolio
+                </button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Contact Hero Section -->
+    <section class="contact-hero">
+        <div class="container">
+            <h1 class="page-title">Get In Touch</h1>
+            <p class="page-subtitle">Have questions or want to collaborate? We'd love to hear from you!</p>
+        </div>
+    </section>
+
+    <!-- Contact Form Section -->
+    <section class="contact-section">
+        <div class="container">
+            <div class="contact-wrapper">
+                <!-- Contact Info -->
+                <div class="contact-info">
+                    <h2 class="section-title">Contact Information</h2>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Address</h3>
+                            <p>Rawalpindi <br>Punjab <br>Pakistan</p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Phone</h3>
+                            <p><a href="tel:+447418354493">+44 7418 354493</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <div class="info-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="info-content">
+                            <h3>Email</h3>
+                            <p><a href="mailto:help@mysticalzone.xyz">help@mysticalzone.xyz</a></p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <h3>Follow Us</h3>
+                        <div class="social-icons">
+                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="https://discord.com" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                                <i class="fab fa-discord"></i>
+                            </a>
+                            <a href="https://instagram.com/slayerxahmii" target="_blank" aria-label="Instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Contact Form -->
+                <div class="contact-form-wrapper">
+                    <form action="https://api.web3forms.com/submit" method="POST" class="contact-form" id="contactForm">
+                        <input type="hidden" name="access_key" value="9fcb2d14-b589-4f19-a2a2-9370a862ddbe">
+                        <input type="hidden" name="redirect" value="https://mysticalzone.xyz/thank-you.html">
+
+                        <div class="form-group">
+                            <label for="name">Full Name</label>
+                            <input type="text" id="name" name="name" required placeholder="Your name">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="email">Email Address</label>
+                            <input type="email" id="email" name="email" required placeholder="your@email.com">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" id="subject" name="subject" required placeholder="What is this about?">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea id="message" name="message" rows="6" required placeholder="Your message here..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn btn-primary">
+                            <i class="fas fa-paper-plane"></i> Send Message
+                        </button>
+
+                        <div class="form-message" id="formMessage"></div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Brand -->
+                <div class="footer-column">
+                    <h3 class="logo-text">
+                        <i class="fas fa-circle-notch"></i> MysticalZone
+                    </h3>
+                    <p class="tagline">Enter the Zone – Discover the Unknown</p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="../">Home</a></li>
+                        <li><a href="../#features">Features</a></li>
+                        <li><a href="../#about">About Us</a></li>
+                        <li><a href="../#faq">FAQ</a></li>
+                        <li><a href="../app">Apps & Tools</a></li>
+                        <li><a href="./">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Legal & Social -->
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                        <li><a href="#disclaimer">Disclaimer</a></li>
+                    </ul>
+                    <h4 style="margin-top: var(--spacing-lg);">Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://discord.com" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 MysticalZone. All rights reserved. Enter the Zone – Discover the Unknown.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/contact/contact.js?v1.1"></script>
+</body>
+</html>
