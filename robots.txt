@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://mysticalzone.xyz/sitemap.xml

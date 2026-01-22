@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thank You - MysticalZone</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .thank-you-container {
+            min-height: calc(100vh - 300px);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: var(--spacing-2xl) 0;
+        }
+
+        .thank-you-content {
+            text-align: center;
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .thank-you-icon {
+            font-size: 80px;
+            color: var(--primary-color);
+            margin-bottom: var(--spacing-xl);
+            display: inline-block;
+            animation: bounce 2s infinite;
+        }
+
+        @keyframes bounce {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        .thank-you-content h1 {
+            font-size: var(--font-size-3xl);
+            margin-bottom: var(--spacing-md);
+            background: linear-gradient(135deg, var(--primary-color), var(--primary-light));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+        }
+
+        .thank-you-content p {
+            font-size: var(--font-size-lg);
+            color: var(--text-secondary);
+            margin-bottom: var(--spacing-xl);
+            line-height: 1.8;
+        }
+
+        .thank-you-actions {
+            display: flex;
+            gap: var(--spacing-md);
+            justify-content: center;
+            flex-wrap: wrap;
+            margin-top: var(--spacing-2xl);
+        }
+
+        .thank-you-actions .btn {
+            min-width: 180px;
+        }
+
+        /* Responsive */
+        @media (max-width: 1024px) {
+            .thank-you-container {
+                padding: var(--spacing-xl) 0;
+            }
+
+            .thank-you-content h1 {
+                font-size: var(--font-size-2xl);
+            }
+
+            .thank-you-icon {
+                font-size: 60px;
+            }
+        }
+
+        @media (max-width: 767px) {
+            .thank-you-container {
+                min-height: calc(100vh - 250px);
+                padding: var(--spacing-lg) 0;
+            }
+
+            .thank-you-content h1 {
+                font-size: var(--font-size-xl);
+            }
+
+            .thank-you-icon {
+                font-size: 50px;
+                margin-bottom: var(--spacing-lg);
+            }
+
+            .thank-you-content p {
+                font-size: var(--font-size-base);
+                margin-bottom: var(--spacing-lg);
+            }
+
+            .thank-you-actions {
+                flex-direction: column;
+                gap: var(--spacing-sm);
+            }
+
+            .thank-you-actions .btn {
+                width: 100%;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1 class="logo-text">
+                        MYSTICALZONE
+                    </h1>
+                    <p class="tagline">Enter the Zone – Discover the Unknown</p>
+                </div>
+
+                <!-- Navigation - Desktop -->
+                <nav class="nav-desktop">
+                    <ul class="nav-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/#features">Features</a></li>
+                        <li><a href="/#about">About</a></li>
+                        <li><a href="/#faq">FAQ</a></li>
+                        <li><a href="/store">Store</a></li>
+                        <li><a href="/radio">Radio</a></li>
+                        <li><a href="/app">Apps</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- CTA Buttons - Desktop -->
+                <div class="cta-buttons-desktop">
+                    <button class="btn btn-secondary" onclick="window.location.href='https://ourchatclub.online/'">
+                        <i class="fas fa-comments" ></i> Join Chat
+                    </button>
+                    <button class="btn btn-primary" onclick="window.location.href='https://me.mysticalzone.xyz/'">
+                        <i class="fas fa-briefcase"></i> Portfolio
+                    </button>
+                </div>
+
+                <!-- Hamburger Menu - Mobile/Tablet -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile/Tablet Menu Panel -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <button class="close-menu" id="closeMenu" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="mobile-nav-links">
+                <li><a href="/">Home</a></li>
+                <li><a href="/#faq">FAQ</a></li>
+                <li><a href="/store">Store</a></li>
+                <li><a href="/radio">Radio</a></li>
+                <li><a href="/app">Apps</a></li>
+                <li><a href="/contact">Contact</a></li>
+            </ul>
+            <!-- Mobile CTA Buttons -->
+            <ul class="mobile-cta-buttons">
+                <li><button class="btn btn-secondary btn-mobile-full" onclick="window.location.href='https://ourchatclub.online/'">
+                    <i class="fas fa-comments"></i> Join Chat
+                </button></li>
+                <li><button class="btn btn-primary btn-mobile-full" onclick="window.location.href='https://me.mysticalzone.xyz/'">
+                    <i class="fas fa-briefcase"></i> Portfolio
+                </button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Thank You Section -->
+    <section class="thank-you-container">
+        <div class="container">
+            <div class="thank-you-content">
+                <div class="thank-you-icon">
+                    <i class="fas fa-check-circle"></i>
+                </div>
+                <h1>Thank You!</h1>
+                <p>
+                    Your message has been received successfully. We appreciate you taking the time to reach out to us. 
+                    Our team will review your message and get back to you as soon as possible.
+                </p>
+                <p style="font-size: var(--font-size-base); color: var(--text-tertiary); margin-bottom: var(--spacing-lg);">
+                    Keep an eye on your email for our response.
+                </p>
+                <div class="thank-you-actions">
+                    <a href="/" class="btn btn-primary">
+                        <i class="fas fa-home"></i> Back to Home
+                    </a>
+                    <a href="/contact" class="btn btn-secondary">
+                        <i class="fas fa-envelope"></i> Send Another Message
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Brand -->
+                <div class="footer-brand">
+                    <h3>MYSTICALZONE</h3>
+                    <p>Enter the Zone – Discover the Unknown</p>
+                </div>
+
+                <!-- Links -->
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Platform</h4>
+                        <ul>
+                            <li><a href="/">Home</a></li>
+                            <li><a href="/app">Apps</a></li>
+                            <li><a href="/contact">Contact</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Community</h4>
+                        <ul>
+                            <li><a href="https://ourchatclub.online/">Join Chat</a></li>
+                            <li><a href="https://me.mysticalzone.xyz/">Portfolio</a></li>
+                            <li><a href="/#about">About Us</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- Social -->
+                <div class="footer-social">
+                    <h4>Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://discord.com" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 MysticalZone. All rights reserved. Enter the Zone – Discover the Unknown.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script>
+        // Mobile Menu Functionality
+        function initMobileMenu() {
+            const hamburger = document.getElementById('hamburger');
+            const mobileMenu = document.getElementById('mobileMenu');
+            const closeMenu = document.getElementById('closeMenu');
+            const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+            const mobileCTAButtons = document.querySelectorAll('.mobile-cta-buttons .btn');
+
+            if (hamburger) {
+                hamburger.addEventListener('click', function() {
+                    hamburger.classList.toggle('active');
+                    mobileMenu.classList.toggle('active');
+                });
+            }
+
+            if (closeMenu) {
+                closeMenu.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            }
+
+            mobileNavLinks.forEach(link => {
+                link.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+
+            mobileCTAButtons.forEach(button => {
+                button.addEventListener('click', function() {
+                    hamburger.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                });
+            });
+
+            document.addEventListener('click', function(event) {
+                const isClickInsideMenu = mobileMenu.contains(event.target);
+                const isClickOnHamburger = hamburger.contains(event.target);
+
+                if (!isClickInsideMenu && !isClickOnHamburger && mobileMenu.classList.contains('active')) {
+                    hamburger.classList.remove('active');
+                    mobileMenu.classList.remove('active');
+                }
+            });
+        }
+
+        // Back to Top Button
+        function initBackToTop() {
+            const backToTopBtn = document.getElementById('backToTop');
+            
+            if (!backToTopBtn) return;
+            
+            window.addEventListener('scroll', () => {
+                if (window.pageYOffset > 300) {
+                    backToTopBtn.classList.add('active');
+                } else {
+                    backToTopBtn.classList.remove('active');
+                }
+            });
+            
+            backToTopBtn.addEventListener('click', () => {
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth'
+                });
+            });
+        }
+
+        // Initialize on page load
+        document.addEventListener('DOMContentLoaded', function() {
+            initMobileMenu();
+            initBackToTop();
+        });
+    </script>
+</body>
+</html>
