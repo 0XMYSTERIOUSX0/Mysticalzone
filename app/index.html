@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="MysticalZone Apps & Tools - Discover powerful applications and tools designed to enhance your workflow and productivity.">
+    <meta name="keywords" content="apps, tools, applications, MysticalZone, productivity, utilities, software">
+    <meta name="author" content="MysticalZone">
+    <title>Apps & Tools – MysticalZone</title>
+    
+    <!-- Preconnect to Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="/app/app.css">
+</head>
+<body>
+    <!-- Header / Navigation -->
+    <header class="header">
+        <div class="container">
+            <div class="header-content">
+                <!-- Logo -->
+                <div class="logo">
+                    <h1 class="logo-text">
+                        MysticalZone
+                    </h1>
+                    <p class="tagline">Enter the Zone – Discover the Unknown</p>
+                </div>
+
+                <!-- Navigation - Desktop -->
+                <nav class="nav-desktop">
+                    <ul class="nav-links">
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/app/#features">Features</a></li>
+                        <li><a href="/app/#about">About</a></li>
+                        <li><a href="/app/#faq">FAQ</a></li>
+                        <li><a href="/store">Store</a></li>
+                        <li><a href="/radio">Radio</a></li>
+                        <li><a href="/contact">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <!-- CTA Buttons - Desktop -->
+                <div class="cta-buttons-desktop">
+                    <button class="btn btn-secondary" onclick="window.location.href='https://ourchatclub.online/'">
+                        <i class="fas fa-comments"></i> Join Chat
+                    </button>
+                    <button class="btn btn-primary" onclick="window.location.href='https://me.mysticalzone.xyz/'">
+                        <i class="fas fa-briefcase"></i> Portfolio
+                    </button>
+                </div>
+
+                <!-- Hamburger Menu - Mobile/Tablet -->
+                <button class="hamburger" id="hamburger" aria-label="Toggle navigation menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <!-- Mobile/Tablet Menu Panel -->
+    <nav class="mobile-menu" id="mobileMenu">
+        <div class="mobile-menu-content">
+            <button class="close-menu" id="closeMenu" aria-label="Close menu">
+                <i class="fas fa-times"></i>
+            </button>
+            <ul class="mobile-nav-links">
+                    <li><a href="/">Home</a></li>
+                    <li><a href="/app/#features">Features</a></li>
+                    <li><a href="/app/#about">About</a></li>
+                    <li><a href="/app/#faq">FAQ</a></li>
+                    <li><a href="/store">Store</a></li>
+                    <li><a href="/radio">Radio</a></li>
+                    <li><a href="/contact">Contact</a></li>
+            </ul>
+            <!-- Mobile CTA Buttons -->
+            <ul class="mobile-cta-buttons">
+                <li><button class="btn btn-secondary btn-mobile-full" onclick="window.location.href='https://ourchatclub.online/'">
+                    <i class="fas fa-comments"></i> Join Chat
+                </button></li>
+                <li><button class="btn btn-primary btn-mobile-full" onclick="window.location.href='https://me.mysticalzone.xyz/'">
+                    <i class="fas fa-briefcase"></i> Portfolio
+                </button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- App Hero Section -->
+    <section id="app-detail" class="app-detail-hero">
+        <div class="container">
+            <div class="app-detail-header">
+                <div class="app-detail-icon">
+                    <i class="fas fa-cube"></i>
+                </div>
+                <div class="app-detail-info">
+                    <h1 style="margin: 0 0 var(--spacing-sm) 0; font-size: var(--font-size-3xl);">MysticalZone</h1>
+                    <p style="margin: 0 0 var(--spacing-md) 0; font-size: var(--font-size-lg); color: var(--text-secondary);">The Ultimate Community & Digital Hub</p>
+                    <div style="display: flex; align-items: center; gap: var(--spacing-lg); margin-bottom: var(--spacing-lg);">
+                        <div style="display: flex; align-items: center; gap: 4px;">
+                            <i class="fas fa-star" style="color: #ffc107;"></i>
+                            <span style="font-size: var(--font-size-base); font-weight: 600;">4.9/5</span>
+                            <span style="font-size: 12px; color: var(--text-secondary);">(12.5K Reviews)</span>
+                        </div>
+                        <span style="padding: 4px 12px; background: rgba(0, 212, 255, 0.1); border-radius: 20px; font-size: 12px; color: var(--primary-color); font-weight: 600;">v2.0.1</span>
+                    </div>
+                </div>
+                <div class="app-detail-actions">
+                    <button class="btn btn-primary btn-download-desktop" onclick="window.location.href='/app/files/Mysticalzone.apk'">
+                        <i class="fas fa-download"></i> Download Now
+                    </button>
+                </div>
+            </div>
+            <!-- Mobile Download Button -->
+            <div style="margin-top: var(--spacing-lg);">
+                <button class="btn btn-primary btn-download-mobile" onclick="window.location.href='/app/files/Mysticalzone.apk'">
+                <i class="fas fa-download"></i> Download Mysticalzone
+                </button>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Screenshots Carousel Section -->
+    <section class="screenshots-carousel-section">
+        <div class="container">
+            <h2 class="section-title">App Showcase</h2>
+            
+            <div class="carousel-wrapper" id="carouselWrapper">
+                <div class="carousel-content" id="carouselContent">
+                    <!-- Screenshot 1 -->
+                    <div class="carousel-item">
+                        <img src="./images/img1.png" alt="Chatroom Interface" class="carousel-image">
+                    </div>
+
+                    <!-- Screenshot 2 -->
+                    <div class="carousel-item">
+                        <img src="./images/img2.png" alt="Store Marketplace" class="carousel-image">
+                    </div>
+
+                    <!-- Screenshot 3 -->
+                    <div class="carousel-item">
+                        <img src="./images/img3.png" alt="Radio Player" class="carousel-image">
+                    </div>
+
+                    <!-- Screenshot 4 -->
+                    <div class="carousel-item">
+                        <img src="./images/img4.png" alt="User Dashboard" class="carousel-image">
+                    </div>
+
+                    <!-- Screenshot 5 -->
+                    <div class="carousel-item">
+                        <img src="./images/img5.png" alt="Settings & Preferences" class="carousel-image">
+                    </div>
+                </div>
+
+                <button class="carousel-nav carousel-nav-prev" id="carouselPrev" aria-label="Previous">
+                    <i class="fas fa-chevron-left"></i>
+                </button>
+                <button class="carousel-nav carousel-nav-next" id="carouselNext" aria-label="Next">
+                    <i class="fas fa-chevron-right"></i>
+                </button>
+            </div>
+
+            <div class="carousel-indicators" id="carouselIndicators"></div>
+        </div>
+    </section>
+    
+    <!-- Features Section -->
+    <section class="app-features-section">
+        <div class="container">
+            <h2 class="section-title">Key Features</h2>
+            
+            <div class="app-features-grid">
+                <!-- Feature 1 -->
+                <div class="app-feature-item">
+                    <div class="feature-badge">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h3>Live Chatroom</h3>
+                    <p>Connect with thousands of users in real-time. Engage in meaningful conversations with our vibrant community.</p>
+                </div>
+
+                <!-- Feature 2 -->
+                <div class="app-feature-item">
+                    <div class="feature-badge">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Premium Store</h3>
+                    <p>Access exclusive addons, scripts, themes, and login pages to customize your experience perfectly.</p>
+                </div>
+
+                <!-- Feature 3 -->
+                <div class="app-feature-item">
+                    <div class="feature-badge">
+                        <i class="fas fa-music"></i>
+                    </div>
+                    <h3>Radio Streams</h3>
+                    <p>Enjoy curated music and audio streams from around the world. Find your perfect groove anytime.</p>
+                </div>
+
+                <!-- Feature 4 -->
+                <div class="app-feature-item">
+                    <div class="feature-badge">
+                        <i class="fas fa-lock"></i>
+                    </div>
+                    <h3>Security First</h3>
+                    <p>Industry-leading encryption and security protocols keep your data safe and your privacy protected.</p>
+                </div>
+
+                <!-- Feature 5 -->
+                <div class="app-feature-item">
+                    <div class="feature-badge">
+                        <i class="fas fa-zap"></i>
+                    </div>
+                    <h3>Lightning Fast</h3>
+                    <p>Experience blazing-fast performance with our optimized infrastructure and zero lag interactions.</p>
+                </div>
+
+                <!-- Feature 6 -->
+                <div class="app-feature-item">
+                    <div class="feature-badge">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Cross-Platform</h3>
+                    <p>Seamlessly switch between desktop, tablet, and mobile. Access all features on any device.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <!-- About Apps Section -->
+    <section class="about">
+        <div class="container">
+            <h2 class="section-title">Why Choose MysticalZone Apps?</h2>
+            
+            <div class="about-content">
+                <p>
+                    All applications on MysticalZone are carefully curated and tested to ensure the highest quality standards. Our app ecosystem is designed with developers and users in mind, providing powerful functionality without compromising on ease of use.
+                </p>
+                
+                <p>
+                    Each app includes comprehensive documentation, regular updates, and professional support. Whether you're looking to enhance your productivity, improve your creative workflow, or strengthen your security, MysticalZone has the perfect tool for you.
+                </p>
+                
+                <p>
+                    Join thousands of users who trust MysticalZone apps to power their digital lives. Experience the difference of professionally developed, community-reviewed applications.
+                </p>
+
+                <button class="btn btn-primary">
+                    <i class="fas fa-arrow-right"></i> Explore All Apps
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <h2 class="section-title">Frequently Asked Questions</h2>
+            
+            <div class="faq-container">
+                <!-- FAQ Item 1 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What platforms does MysticalZone support?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>MysticalZone is available on Windows, macOS, Linux, iOS, and Android. Download the version that matches your device and start exploring right away.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 2 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Is MysticalZone completely free?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! MysticalZone is free to download and use. All core features including chatroom, radio, and basic apps are completely free. Premium items in the store are optional purchases.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 3 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How do I create an account?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Simply download the app and click "Join Chatroom" or "Sign Up". You'll be guided through a quick registration process. It takes less than 2 minutes to get started.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 4 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Is my data secure in MysticalZone?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Absolutely! We use industry-leading encryption and security protocols. Your messages, data, and personal information are always protected and never shared with third parties.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 5 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How do I access premium features?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Visit our Store section within the app to browse premium addons, themes, and scripts. You can purchase individual items or subscribe for exclusive benefits.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 6 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>Can I use MysticalZone on multiple devices?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>Yes! Your account syncs across all devices. Download on desktop, tablet, and mobile to access your chats, preferences, and purchases everywhere.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 7 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>How often is the app updated?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We release updates regularly with new features, security patches, and improvements. Updates are pushed automatically, and you can check for them in the app settings.</p>
+                    </div>
+                </div>
+
+                <!-- FAQ Item 8 -->
+                <div class="faq-item">
+                    <button class="faq-question" aria-expanded="false">
+                        <span>What if I need technical support?</span>
+                        <i class="fas fa-chevron-down"></i>
+                    </button>
+                    <div class="faq-answer">
+                        <p>We offer 24/7 support through our community forums and help center. You can also contact us directly through the "Help" section in the app or via our website.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <!-- Column 1: Brand -->
+                <div class="footer-column">
+                    <h3 class="logo-fotter">
+                        MysticalZone
+                    </h3>
+                    <p class="tagline">Enter the Zone – Discover the Unknown</p>
+                </div>
+
+                <!-- Column 2: Quick Links -->
+                <div class="footer-column">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/app/#features">Features</a></li>
+                        <li><a href="/app/#about">About Us</a></li>
+                        <li><a href="/app/#faq">FAQ</a></li>
+                        <li><a href="/store">Store</a></li>
+                        <li><a href="/radio">Radio</a></li>
+                        <li><a href="/app/#">Apps & Tools</a></li>
+                        <li><a href="/">Contact</a></li>
+                    </ul>
+                </div>
+
+                <!-- Column 3: Legal & Social -->
+                <div class="footer-column">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#terms">Terms of Service</a></li>
+                        <li><a href="#privacy">Privacy Policy</a></li>
+                        <li><a href="#cookies">Cookie Policy</a></li>
+                        <li><a href="#disclaimer">Disclaimer</a></li>
+                    </ul>
+                    <h4 style="margin-top: var(--spacing-lg);">Follow Us</h4>
+                    <div class="social-icons">
+                        <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" aria-label="Twitter">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a href="https://discord.com" target="_blank" rel="noopener noreferrer" aria-label="Discord">
+                            <i class="fab fa-discord"></i>
+                        </a>
+                        <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" aria-label="Instagram">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://youtube.com" target="_blank" rel="noopener noreferrer" aria-label="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="https://github.com" target="_blank" rel="noopener noreferrer" aria-label="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="footer-bottom">
+                <p>&copy; 2025 MysticalZone. All rights reserved. Enter the Zone – Discover the Unknown.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" aria-label="Back to top">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <script src="/app/appscript.js"></script>
+</body>
+</html>
